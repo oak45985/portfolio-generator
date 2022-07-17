@@ -114,7 +114,7 @@ const promptProject = portfolioData => {
         ])
         .then(projectData => {
         portfolioData.projects.push(projectData);
-        if (projectData.confirmAddproject) {
+        if (projectData.confirmAddProject) {
             return promptProject(portfolioData);
         } else {
             return portfolioData;
